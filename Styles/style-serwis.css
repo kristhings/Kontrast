@@ -21,6 +21,7 @@ nav {
     transition: .4s;
 }
 nav .wrapper {
+    padding: 0 20px;
     max-width: 1400px;
     margin:0 auto;
 }
@@ -73,7 +74,7 @@ nav .wrapper .navbar-right ul li:hover a {
     .sidenav {
         display: block;
         position: fixed;
-        height:80px;
+        height:50px;
         width: 100vw;
         background-color: rgb(245, 241, 241);
         box-shadow: 0 6px 100px black;
@@ -94,7 +95,7 @@ nav .wrapper .navbar-right ul li:hover a {
     .sidenav .wrapper-sidenav .sidenav-left {
         flex-basis: 50%;
         width: 50px;
-        height: 50px;
+        height: 30px;
     background-image: url(../Images/nav-logo.png);
     background-size: contain;
     background-repeat: no-repeat;

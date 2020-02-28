@@ -21,6 +21,7 @@ nav {
     transition: .4s;
 }
 nav .wrapper {
+    padding: 0 20px;
     max-width: 1400px;
     margin:0 auto;
 }
@@ -73,7 +74,7 @@ nav .wrapper .navbar-right ul li:hover a {
     .sidenav {
         display: block;
         position: fixed;
-        height:80px;
+        height:50px;
         width: 100vw;
         background-color: rgb(245, 241, 241);
         box-shadow: 0 6px 100px black;
@@ -94,7 +95,7 @@ nav .wrapper .navbar-right ul li:hover a {
     .sidenav .wrapper-sidenav .sidenav-left {
         flex-basis: 50%;
         width: 50px;
-        height: 50px;
+        height: 30px;
     background-image: url(../Images/nav-logo.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -221,9 +222,11 @@ header h1 {
     font-size: 80px;
     color: white;
 }
-@media (max-width:420px) and (orientation:portrait) {
+
+
+@media (max-width:1024px) {
     header h1 {
-        font-size: 40px;
+        font-size: 60px;
     }
 }
 @media (max-width:800px) and (orientation:landscape) {
@@ -231,15 +234,14 @@ header h1 {
         font-size: 40px;
     }
 }
-@media (max-width:1024px) {
+@media (max-width:420px) and (orientation:portrait) {
     header h1 {
-        font-size: 60px;
+        font-size: 40px;
     }
-}   
-
+}
 /* sekcja uslugi opis */
 section.kontakt {
-    padding: 50px;
+    padding:20px 10px;
 }
 section.kontakt .wrapper {
     max-width: 1200px;
@@ -270,15 +272,10 @@ section.kontakt .map {
 
 @media (max-width:420px) and (orientation:portrait) {
     section.kontakt .wrapper h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 /*footer*/
-
-
-
-
-
 
 footer {
     background-color: #151515;
@@ -286,14 +283,14 @@ footer {
     width: 100%;
 }
 footer .wrapper {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 footer .wrapper .a {
     padding-top: 10px;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 footer .wrapper a {
     width: 80px;
@@ -314,24 +311,30 @@ footer .wrapper p {
     text-align: center;
     padding-bottom: 10px;
 }
-#map {
-    height: 400px;
-    width: 100%;;
-}
-section.kontakt .map {
-    width: 100%;
-    height: 500px;
-}
-
+} 
 @media (max-width:420px) and (orientation:portrait) {
-    footer a {
-        font-size: 15px;
+    footer .wrapper {
+        display: flex;
     }
-    footer a:hover { font-size: 15px;}
-    
-}
-@media (max-width:769px) and (orientation:portrait) {
-    footer .a {
+    footer .wrapper .a {
+        flex-basis: 100%;
         justify-content: space-around;
     }
+    footer .wrapper p {
+        text-align: center;
+        font-size: 15px;
+        margin: 0 auto;
+    }
 }
+@media (max-width:800px) and (orientation:portrait) {
+    footer .wrapper .a {
+        justify-content: space-evenly;
+    }
+    footer .wrapper .a a {
+        margin: 40px 20px;
+    }
+}
+@media (max-width:830px) and (orientation:landscape) {
+
+}
+@media (max-width)
