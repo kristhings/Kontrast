@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="Styles/style-kontakt.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="//ciasteczka.eu/cookiesEU-latest.min.js"></script>
+   
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin=""/>
@@ -86,26 +89,18 @@
             <p>&copy; Wszelkie prawa zastrzeżone | Krzysztof Puda</p>
         </div>
     </footer>
+    <section id="cookie-warn">
+      <p><strong>UWAGA!</strong> Niniejsza strona wykorzystuje pliki cookies. 
+      Informacje uzyskane za pomocą cookies wykorzystywane są głównie 
+      w celach statystycznych. Pozostając na stronie godzisz się na 
+      ich zapisywanie w Twojej przeglądarce. 
+     <p> <a href="https://www.youtube.com/watch?v=pQvg3uCFOCM">Co to są pliki cookies?</a></p>
+      </p>
+      <a href="javascript:void(0);" id="close-cookie-warn">Zamknij powiadomienie</a>
+  </section>
 </body>
+<script src="Scripts/cookies.js"></script>
 <script src="Scripts/hamburger.js"></script>
 <script src="Scripts/scroll.js"></script>
-<script>
-
-	var mymap = L.map('mapid').setView([50.108943,19.041426
-], 13);
-var marker = L.marker([50.108943,19.041426
-]).addTo(mymap);
-// marker.bindPopup("<b>Pralnia Kontrast</b><br>Tychy ul.Główna 31").openPopup();
-
-	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-		maxZoom: 30,
-		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-		id: 'mapbox/streets-v11',
-		tileSize: 512,
-		zoomOffset: -1
-	}).addTo(mymap);
-
-</script>
+<script src="Scripts/map.js"></script>
 </html>

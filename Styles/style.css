@@ -375,8 +375,8 @@ header {
     position: relative;
     height:80vh;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Images/ocean.jpg);
-    background-position: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../Images/ocean.jpg);
+    background-position: 50% 10%;
     background-size: cover;
 }
 header h1 {
@@ -632,4 +632,34 @@ footer .wrapper p {
         margin: 50px 0;
         flex-basis: 30%;
     }
+}
+
+
+
+#cookie-warn{
+    position: fixed;
+    bottom: 0;
+    background: #EEE;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    display: none;
+    z-index: 99;
+}
+ 
+#cookie-warn p a{
+    color: #D66E1A;
+    text-transform: uppercase;
+    float: left;
+    padding-right: 20px;
+}
+ 
+#cookie-warn p{
+    font-size: 18px;
+    color: #333;
+}
+#cookie-warn a {
+    float: right;
+    text-transform: uppercase;
+    color: red;
 }
