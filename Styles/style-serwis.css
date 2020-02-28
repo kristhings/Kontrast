@@ -629,11 +629,8 @@ section.uslugi .serwis button a {
 /*footer*/
 
 
-
-
 footer {
     background-color: #151515;
-    
     width: 100%;
 }
 footer .wrapper {
@@ -663,16 +660,9 @@ footer .wrapper p {
     text-align: center;
     padding-bottom: 10px;
 }
-} 
-
-
-@media (max-width:830px) and (orientation:landscape) {
-}
-@media (max-width:800px) and (orientation:portrait) {
-    footer .wrapper .a {
-        justify-content: space-evenly;
-    }
+@media (max-width:420px) and (orientation:portrait) {
     footer .wrapper .a a {
-        margin: 40px 20px;
+        margin: 50px 0;
+        flex-basis: 30%;
     }
 }
