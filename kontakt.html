@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Styles/style-kontakt.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=latin-ext" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+ <!-- NAVBAR                          -->
+
+    <nav class="navbar" id="nav">
+        <div class="wrapper clearfix">
+            <div class="navbar-left" id="navbar-left"></div>
+            <div class="navbar-right" id="navbar-right">
+                <ul>
+                    <li><a href="index.html" class="active navbar-a" >o nas</a></li>
+                    <li><a href="uslugi.html"  class="navbar-a">usługi</a></li>
+                    <li><a href="serwis.html"  class="navbar-a">serwis</a></li>
+                    <li><a href="kontakt.html"  class="navbar-a">kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="sidenav">
+        <div class="wrapper-sidenav">
+            <div class="sidenav-left"></div>
+            <div class="sidenav-right">
+                <button class="hamburger">
+                    <span class="hamburger__box">
+                      <span class="hamburger__inner"></span>
+                    </span>
+                  </button>
+                <div class="navigation">
+                    <ul class="navigation__list">
+                      <li class="navigation__item"><a href="index.html">O nas</a></li>
+                      <li class="navigation__item"><a href="uslugi.html">Usługi</a></li>
+                      <li class="navigation__item"><a href="serwis.html">serwis</a></li>
+                      <li class="navigation__item"><a href="kontakt.html">kontakt</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER                          -->
+
+    <header><h1>KONTAKT</h1></header>
+
+     <!-- SEKCJA USLUGI OPIS                          -->
+    <section class="kontakt">
+        <div class="wrapper">
+            <h1>skontaktuj się z nami</h1>
+            <h2>FHU Kontrast Jarosław Puda</h2>
+            <p>ul.Główna 31, 43-100 Tychy</p>
+            <p>woj. Śląskie</p>
+            <p>Telefon: <a href="tel:+48506064642">+48 506 064 642</a></p>
+            <p>Telefon: <a href="tel:+48327201222">+48 32 720 12 22</a></p>
+            <p>Email: <a href="mailto:pralniakontrast@gmail.com">pralniakontrast@gmail.com</a></p>
+        
+        </div>
+    </section>
+
+    <div id="map" class="map"></div>
+    
+
+
+     <!-- FOOTER                          -->
+
+     <footer>
+        <div class="wrapper">
+            <div class="a">
+            <a href="index.html">O nas</a>
+            <a href="uslugi.html">Usługi</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+            <p>&copy; Wszelkie prawa zastrzeżone | Krzysztof Puda</p>
+        </div>
+    </footer>
+</body>
+
+<script src="/Scripts/hamburger.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script><script src="Scripts/scroll.js"></script>
+
+    <script type="text/javascript">
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([50.13, 18.9664]),
+          zoom: 4
+        })
+      });
+    </script>
+</html>
